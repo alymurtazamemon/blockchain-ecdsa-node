@@ -17,12 +17,12 @@ const [signTransaction, recoveryBit] = await secp.sign(
 );
 console.log(`Sign Transaction: ${toHex(signTransaction)}`);
 
-const publicKey = secp.recoverPublicKey(
-    messageHash,
-    signTransaction,
-    recoveryBit
-);
+// const publicKey = secp.recoverPublicKey(
+//     messageHash,
+//     signTransaction,
+//     recoveryBit
+// );
 // console.log(`Public key: ${toHex(publicKey)}`);
 
-const isSigned = secp.verify(signTransaction, messageHash, publicKey);
-console.log(`Is Signed: ${isSigned}`);
+// const isSigned = secp.verify(signTransaction, messageHash, publicKey);
+// console.log(`Is Signed: ${isSigned}`);
